@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/assets/Mahmoud-Badi-Resume.pdf",
+      "headers": [
+        { "key": "Content-Type", "value": "application/pdf" },
+        { "key": "Content-Disposition", "value": "inline; filename=Mahmoud-Badi-Resume.pdf" }
+      ]
+    }
+  ]
+}

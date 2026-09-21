@@ -6,3 +6,92 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 /* Preserve the screenshot's proportions rather than its HTML fallback height. */
 .image-art img{height:auto;aspect-ratio:2872 / 982;object-fit:contain}
+/* Theme and centered portrait revision */
+:root{color-scheme:dark;--bg:#0b0e12;--ink:#edf1f7;--muted:#a0aab8;--line:#29313d;--accent:#8bcfff;--surface:#111720;--surface-alt:#151e2a;--tag:#202d3d;--button-ink:#071725}
+:root[data-theme=light]{color-scheme:light;--bg:#f7f9fc;--ink:#142234;--muted:#526276;--line:#d6e0eb;--accent:#126aa6;--surface:#fff;--surface-alt:#edf3fa;--tag:#e2edf8;--button-ink:#fff}
+::selection{background:#3389c666;color:var(--ink)}body{transition:background .25s,color .25s}.nav{max-width:1320px}.nav-tools{display:flex;align-items:center;gap:24px}#theme-toggle{display:grid;place-items:center;width:42px;height:42px;font-size:24px;background:var(--surface);border:1px solid var(--line);border-radius:50%;color:var(--accent)}
+.hero{text-align:center;padding-top:30px}.hero-id{display:flex;justify-content:space-between;font-size:12px;letter-spacing:1px;color:var(--muted)}.portrait{display:block;margin:45px auto 28px;width:220px;perspective:800px}.portrait-frame{position:relative;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .15s ease-out;will-change:transform}.portrait img{width:220px;height:240px;object-fit:cover;object-position:center 25%;border-radius:28px;filter:none;border:1px solid #7baacc66;box-shadow:0 18px 60px #0003}.portrait-corner{position:absolute;right:-12px;bottom:20px;display:grid;place-items:center;background:var(--accent);color:var(--button-ink);border:6px solid var(--bg);border-radius:50%;width:50px;height:50px;font-size:22px}.hero-greeting{font-size:23px;margin-top:18px;letter-spacing:-.5px}h1{font-size:clamp(42px,5.5vw,76px);line-height:1.12;margin-top:14px;letter-spacing:-.055em}h1>span{color:var(--accent)}.hero .intro{margin:23px auto 0;max-width:650px;font-size:17px;color:var(--muted);letter-spacing:0;line-height:1.8}.hero-actions{justify-content:center;margin-top:28px}.dark{background:var(--accent);color:var(--button-ink)}.dark:hover{background:var(--accent);filter:brightness(1.12)}.experience-strip{margin-top:65px}.experience-strip>div{color:var(--muted)}.experience-strip>span{font-size:12px}.section-heading h2,.about h2,.contact h2{font-size:clamp(36px,4.3vw,56px)}.section-heading>p{font-size:16px}.project{background:var(--surface);border-color:var(--line)}.barakah .project-art{background:#142b40;color:#cceaff}.barakah-word{font-family:var(--display);font-weight:600}.cougar .project-art{background:#172336;color:#dbe8fa}.cougar-word{font-size:37px}.cougar-word em{font-family:var(--display);font-style:normal;color:#8bcfff}.getdone .project-art{background:#1b2734}.tags span,.job .tags span{background:var(--tag);color:var(--muted)}.project-info>.award{color:var(--accent)}.experience-section{background:var(--surface)}.job{border-color:var(--line)}.job .role,.job-index{color:var(--muted)}.terminal{background:var(--surface);color:var(--ink);border-color:var(--line)}.terminal-title{border-color:var(--line);color:var(--muted)}.terminal-title button,.terminal-muted,.terminal-hint{color:var(--muted)}.terminal-highlight,.terminal-command,#terminal-form label,#terminal-form button{color:var(--accent)}#command{color:var(--ink)}#command::placeholder{color:var(--muted)}.inline-command{background:var(--tag);color:var(--accent)}.contact h2{margin-top:18px}.skip{background:var(--surface)}.eyebrow,.art-caption,.small-label,.job-date,.job-index,.about-details span,.terminal-title,.terminal-title button,.terminal-hint,.fuji span{font-size:12px}.small-label{max-width:140px}.tags span,.project-actions>a,footer>span,footer>div{font-size:14px}.about-details p{font-size:14px}.terminal{font-size:14px}.terminal-intro h2{font-size:38px}.terminal-title>span:first-child{font-size:10px}.art-caption{letter-spacing:.8px}.job-date{letter-spacing:0}.job{grid-template-columns:220px 1fr 30px}#custom-cursor{position:fixed;z-index:9999;width:12px;height:12px;border:1.5px solid var(--accent);background:var(--accent);border-radius:3px;pointer-events:none;left:0;top:0;opacity:0;transform:translate(-50%,-50%) rotate(45deg);transition:width .15s,height .15s,background .15s,border-radius .15s}.cursor-active #custom-cursor{opacity:1}.cursor-active,.cursor-active a,.cursor-active button{cursor:none}.cursor-active input{cursor:text}#custom-cursor.over-link{width:32px;height:32px;border-radius:50%;background:transparent}#custom-cursor.pressed{width:8px;height:8px;background:var(--accent)}
+@media(max-width:1000px){.job{grid-template-columns:165px 1fr 20px}.portrait figcaption{display:none}}
+@media(max-width:680px){.nav-tools{gap:0}.nav nav{gap:17px}.nav-contact{display:none}#theme-toggle{width:36px;height:36px;font-size:22px}.hero{padding-top:25px}.hero-id{font-size:10px;gap:20px;text-align:left}.hero-id>span:last-child{text-align:right;max-width:180px}.portrait{width:185px;margin-top:35px;margin-bottom:25px}.portrait img{width:185px;height:202px;border-radius:24px}.hero-greeting{font-size:20px}h1{font-size:clamp(34px,8.5vw,53px);margin-top:15px}.hero .intro{font-size:15px}.hero-actions{gap:30px}.experience-strip{margin-top:42px}.experience-strip>span{font-size:12px}.experience-strip .fuji{font-size:14px}.fuji span{font-size:10px;letter-spacing:0}.section-heading h2,.about h2,.contact h2{font-size:38px}.cougar-word{font-size:33px}.small-label{font-size:12px;max-width:120px}.job{grid-template-columns:1fr 20px}.job-date{font-size:12px}.terminal-hint{font-size:12px}.terminal-title>span:first-child{display:none}.tags span{font-size:12px}.terminal-title{gap:8px}.about-details{flex-wrap:wrap}.hero-id{font-size:12px}.terminal{font-size:13px}}
+@media(prefers-reduced-motion:reduce),(pointer:coarse){#custom-cursor{display:none}.cursor-active,.cursor-active a,.cursor-active button{cursor:auto}.portrait-frame{transform:none!important}}
+.getdone .project-art{color:#dbe8fa}
+
+/* Real company marks, with a neutral light backing to preserve brand colors. */
+.experience-strip{gap:28px;flex-wrap:wrap}
+.experience-strip .company-logo{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:5px;width:150px;height:70px;padding:18px 22px;flex-shrink:0}
+.experience-strip .company-logo img{display:block;width:100%;height:100%;object-fit:contain;max-height:40px}
+.experience-strip .ibm-logo{padding:18px 32px}
+.experience-strip .fujifilm-logo{width:190px;padding:12px 16px}
+.experience-strip .fujifilm-logo img{max-height:46px}
+.experience-strip .webrise-wordmark{font-size:24px}
+[data-theme=light] .experience-strip .company-logo{outline:1px solid var(--line)}
+@media(max-width:680px){.experience-strip{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding-block:24px;text-align:center}.experience-strip>span{grid-column:1/-1;text-align:left}.experience-strip .company-logo,.experience-strip .fujifilm-logo{width:100%;height:64px;min-width:0}.experience-strip .ibm-logo{padding:17px 32px}.experience-strip .webrise-wordmark{font-size:23px;align-self:center}}
+/* Transparent company strip; monochrome marks on dark surfaces. */
+.experience-strip .company-logo{background:transparent;border-radius:0;outline:none}
+[data-theme=light] .experience-strip .company-logo{outline:none}
+.experience-strip .company-logo img{filter:grayscale(1) brightness(0) invert(1);opacity:.85}
+[data-theme=light] .experience-strip .company-logo img{filter:none;opacity:1}
+/* Remove the raster logo's white canvas visually without changing its shape. */
+.experience-strip .fujifilm-logo img{filter:grayscale(1) invert(1);mix-blend-mode:screen}
+[data-theme=light] .experience-strip .fujifilm-logo img{filter:none;mix-blend-mode:multiply}
+/* BECU includes a solid brand panel: preserve its internal color contrast. */
+.experience-strip .becu-logo img,
+[data-theme=light] .experience-strip .becu-logo img{filter:none;opacity:1;mix-blend-mode:normal}
+
+/* Lucide icons: one stroke weight, optical size, and alignment throughout. */
+.icon{display:inline-block;vertical-align:middle;flex:0 0 auto;width:18px;height:18px;pointer-events:none}
+.nav-contact,.project-actions>a,footer>div>a{display:inline-flex;align-items:center;gap:8px}
+#theme-toggle .icon{width:20px;height:20px}
+.portrait-corner .icon{width:21px;height:21px}
+.dialog-close{display:grid;place-items:center}
+.dialog-close .icon{width:22px;height:22px}
+.award .icon{width:16px;height:16px;margin-right:4px}
+.terminal-title>.icon{color:var(--muted);width:16px;height:16px}
+#terminal-form button{display:grid;place-items:center}
+.terminal-command .icon{width:14px;height:14px}
+.more-work b{display:flex;align-items:center;justify-content:center}
+@media(max-width:680px){.icon{width:16px;height:16px}}
+
+.project-actions{flex-wrap:wrap}
+
+/* Keep navigation centered even when the two side controls differ in width. */
+.nav{display:grid;grid-template-columns:1fr auto 1fr;gap:24px}
+.nav>.wordmark{justify-self:start}
+.nav>nav{justify-self:center}
+.nav>.nav-tools{justify-self:end}
+.barakah-media{min-width:0;display:flex;flex-direction:column;justify-content:center;background:var(--surface-alt);padding:24px}
+.barakah-media video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#000;border-radius:6px;cursor:auto}
+.demo-caption{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;color:var(--muted);font-size:12px;letter-spacing:.4px}
+@media(max-width:680px){.nav{gap:10px}.nav nav{gap:16px}.barakah-media{padding:16px}.demo-caption{font-size:11px;letter-spacing:0}}
+
+/* Project imagery stays uncropped; team photos retain every person. */
+.project-grid>.cougar{grid-column:1/-1;display:grid;grid-template-columns:1.15fr 1fr}
+.cougar-gallery{padding:24px;background:var(--surface-alt);min-width:0}
+.project-photo{min-width:0;margin:0}
+.photo-expand{position:relative;display:block;width:100%;padding:0;background:transparent;border:0;border-radius:6px;overflow:hidden;text-align:left}
+.photo-expand img{width:100%;height:auto;display:block;object-fit:contain}
+.project-photo figcaption{font-size:12px;line-height:1.5;color:var(--muted);padding-top:10px}
+.photo-expand-mark{position:absolute;right:10px;bottom:10px;width:30px;height:30px;display:grid;place-items:center;border:1px solid #ffffff50;border-radius:50%;background:#101820d9;color:white}
+.photo-expand:hover .photo-expand-mark{background:#176ca5}
+.team-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.team-photos .photo-expand{aspect-ratio:4/3;background:#080b10}
+.team-photos .photo-expand img{width:100%;height:100%;object-fit:contain}
+.project-grid>.cougar .project-info{justify-content:center}
+.project-grid>.cougar .project-actions{margin-top:12px}
+.sahel-gallery{padding:24px;background:#1e1e1e}
+.sahel-gallery figcaption{color:#b9c2ce}
+#photo-dialog{width: min(1200px,calc(100% - 32px));max-width:1200px;padding:48px 20px 20px;max-height:94dvh;background:var(--surface)}
+#photo-full{display:block;width:100%;height:auto;max-height:calc(90dvh - 115px);object-fit:contain}
+#photo-caption{text-align:center;padding-top:14px;color:var(--muted);font-size:14px}
+.photo-close{position:absolute;right:12px;top:8px;display:grid;place-items:center;width:36px;height:36px;background:none;border:0;color:var(--ink)}
+@media(max-width:800px){.project-grid>.cougar{display:flex}.cougar-gallery,.sahel-gallery{padding:18px}.team-photos{gap:12px}.project-grid>.cougar .project-actions{margin-top:auto}}
+@media(max-width:400px){.team-photos{grid-template-columns:1fr}.team-photos .photo-expand{aspect-ratio:auto}.team-photos .photo-expand img{height:auto}}
+/* Native dialogs occupy the browser top layer, above any custom cursor. */
+body:has(dialog[open]),
+body:has(dialog[open]) a,
+body:has(dialog[open]) button{cursor:auto}
+body:has(dialog[open]) a,
+body:has(dialog[open]) button{cursor:pointer}
+body:has(dialog[open]) #custom-cursor{display:none}
+dialog,dialog::backdrop{cursor:auto}
+dialog a,dialog button{cursor:pointer}

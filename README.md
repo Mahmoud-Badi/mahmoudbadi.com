@@ -1,24 +1,24 @@
 # Mahmoud Badi — Portfolio
 
-A responsive, static portfolio. No framework or build step required.
+Responsive static portfolio with dark/light themes, Lucide icons, project galleries, a Barakah video demo, and an interactive terminal.
 
-## Preview
+## Deploy on Vercel
 
-Run `python3 -m http.server 4173 --directory dist`, then open http://localhost:4173.
+Import this GitHub repository in Vercel. Use the repository root as the Root Directory. The included `vercel.json` selects the Other framework preset, skips the build step, and serves `dist/`.
 
-## Edit
+After deployment, add `mahmoudbadi.com` in the project's Domains settings and apply the DNS records Vercel provides in Cloudflare.
 
-- `dist/index.html`: content, experience, project cards, contact links
-- `dist/style.css`: typography, layout, responsive styles
-- `dist/app.js`: project detail dialogs and the terminal playground
-- `dist/assets/`: portrait, project screenshot, resume and favicon
+## Local preview
 
-Deploy `dist/` with any static hosting provider. The `.openai/hosting.json` manifest connects this checkout to the private Sites preview; it contains no credentials. Domain DNS has not been changed.
+Run `python3 -m http.server 4173 --directory dist` and open http://localhost:4173.
 
-## Content provenance
+## Files
 
-Experience and education come from Mahmoud's supplied resumes. Project details come from those resumes and the public project READMEs. LinkedIn could not be independently read. Sahel is described as a fictional restaurant, and GetDone/ReadStack as learning projects. Barakah and CougarDegree are hackathon projects, with original typographic covers rather than invented product screenshots. GetDone uses its repository screenshot.
+- `dist/index.html`: content and markup
+- `dist/style.css`: styling and responsive layout
+- `dist/app.js`: themes, dialogs, terminal, and pointer interactions
+- `dist/assets/`: supplied images, compressed demo video, résumé, and icon license
 
-## Accessibility
+All résumé links use `/assets/Mahmoud-Badi-Resume.pdf` relative to the deployed document and open the supplied PDF directly. Update that file to replace the résumé.
 
-Semantic landmarks, visible keyboard focus, a skip link, native modal focus management, reduced-motion support, and safe text rendering in the terminal. Terminal commands run locally and do not execute a real shell or send visitor input to a service.
+Company logos reference external image hosts. WebRise remains a text wordmark. Lucide SVG icons are embedded locally, with their license in `dist/assets/LUCIDE-LICENSE`.
